@@ -43,6 +43,7 @@ overflow-x: hidden;
     transition: 2s;
     position: fixed;
     width: 100vw;
+    bottom: 0;
 
   }
   
@@ -77,6 +78,9 @@ overflow-x: hidden;
     position: fixed;
     top: 0;
     color: white;
+    background-color:#00000079;
+
+    
   }
   .search_bar input{
     font-size: 16px;
@@ -170,9 +174,7 @@ height: auto;
   }
   
   @media screen and (max-width: 600px) {
-    .search_bar{
-        margin-left: 10px;
-    }
+
     .search_bar input{
         font-size: 14px;
         padding:5px 5px;
@@ -182,11 +184,11 @@ height: auto;
     .terminal_container{
         max-width: 95vw;
     }
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: fixed;}
     .topnav.responsive .icon {
-      position: absolute;
+      position: fixed;
       right: 0;
-      top: 0;
+      bottom: 0;
     }
     .topnav.responsive a {
       float: none;
@@ -196,5 +198,5 @@ height: auto;
     
   }
   .icon{
-    z-index: 3;
+    z-index: 999;
   }

@@ -29,3 +29,16 @@ searchInput.addEventListener("keyup", function () {
     }
   }
 });
+
+
+const copyButtons = document.querySelectorAll('.copy-button');
+
+copyButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const textarea = button.parentNode.querySelector('textarea');
+        textarea.select();
+        document.execCommand('copy');
+        textarea.blur();
+        copyButtons.innerHTML = "azlan";
+    });
+});
