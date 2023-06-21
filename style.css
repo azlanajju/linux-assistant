@@ -170,10 +170,14 @@ overflow-x: hidden;
   }
   
   @media screen and (max-width: 600px) {
+    .search_bar{
+        margin-left: 10px;
+    }
     .search_bar input{
         font-size: 14px;
-        padding:5px 3px;
+        padding:5px 5px;
         margin-top: 10px;
+
     }
     .terminal_container{
         max-width: 95vw;
