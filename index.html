@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+        
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-ellipsis-v"></i>
+            <i class="fa fa-ellipsis-v"></i>
+
+            <i class="fa fa-ellipsis-v"></i>
+
+
+          </a>
+        </div>
+      <style>
+        
+      </style>
+<div class="search_bar">
+    <input class="search__input" type="search" placeholder="Type to search" id="searchInput" autocomplete="off" >
+ 
+</div>
+<div class="background">
+    
+</div>
+
+<div style="height: 100px;" class="nothing"></div>
+
+<div class="terminals ">
+
+    <div class="terminal_container commandsSet" data-tags="#install #flutter">
+        <div class="terminal_heading">
+        
+            Install Flutter:~
+        </div>
+        <button class="copy-button"><i class="fa fa-copy"></i>
+        </button>
+
+        <p>flutter@install:~<span style="color: white;">$</span></p>
+        <textarea readonly>
+            sudo snap install flutter --classic
+        </textarea>
+
+
+    </div>
+    
+
+<div class="terminal_container commandsSet" data-tags="#install #vscode">
+    <div class="terminal_heading">
+        Install VS Code:~
+    </div>
+    <button class="copy-button"><i class="fa fa-copy"></i>
+    </button>
+
+    <p>flutter@install:~<span style="color: white;">$</span></p>
+    <textarea readonly>
+        sudo snap install --classic code
+    </textarea>
+
+</div> 
+
+<div class="terminal_container commandsSet" data-tags="#install #vscode">
+    <div class="terminal_heading">
+        Install VS Code:~
+    </div>
+    <button class="copy-button"><i class="fa fa-copy"></i>
+    </button>
+
+    <p>flutter@install:~<span style="color: white;">$</span></p>
+    <textarea readonly>
+        sudo snap install --classic code
+    </textarea>
+</div> 
+</div>
+
+<script>
+const copyButtons = document.querySelectorAll('.copy-button');
+
+copyButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const textarea = button.parentNode.querySelector('textarea');
+        textarea.select();
+        document.execCommand('copy');
+        textarea.blur();
+        copyButtons.innerHTML="azlan";
+    });
+});
+
+</script>
+
+        <script src="./main.js"></script>
+
+        
+        </body>
+</html>
