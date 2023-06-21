@@ -195,3 +195,6 @@ overflow-x: hidden;
     }
     
   }
+  .icon{
+    z-index: 3;
+  }
